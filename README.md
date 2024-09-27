@@ -81,7 +81,3 @@ bash white_main.sh --dataset_name commonsenseqa --prompt csuperhigh --interv_typ
 cd intervention_rephrase
 python generate_intervention_commonsenseqa.py
 ```
-
-
-## TODO
-json文件中的模型路径
