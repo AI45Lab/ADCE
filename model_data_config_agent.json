@@ -1,0 +1,61 @@
+{
+  "datasets": {
+      "2_digit_multiplication": "../data/2_digit_multiplication/task.json",
+      "commonsenseqa": "../data/commonsenseqa/task_commonsenseqa.json",
+      "commonsenseqa_interv": "../data/commonsenseqa/task_commonsenseqa_interv.json",
+      "analytic_entailment":"../data/analytic_entailment/task.json",
+      "analytic_entailment_interv":"../data/analytic_entailment/task_intervention.json",
+      "word_unscrambling":"../data/word_unscrambling/task_sample.json",
+      "civilcomments":"../data/civilcomments/test_sample_filtered.json",
+      "civilcomments_maj":"../data/civilcomments/test_sample_majority.json",
+      "civilcomments_min":"../data/civilcomments/test_sample_minority.json",
+      "civilcomments_interv_maj":"../data/civilcomments/task_intervention_majority.json",
+      "civilcomments_interv_min":"../data/civilcomments/task_intervention_minority.json",
+      "GSM8k":"../data/GSM8k/task.jsonl"
+  },
+
+"prompt":{
+    "2_digit_multiplication": {
+      "superhigh":"\nBelow is an arithmetic reasoning question and answer in the format of 'The answer is' whitout any other introductory phrases. \n### Question:\n[INSTRUCTION]\n\n### Response:\n",
+      "fewshot_superhigh": "Below is an arithmetic reasoning question and answer in the format of 'The answer is' whitout any other introductory phrases. \n### Examples:\n\n### Question: What is 73 times 66?\n\n### Response:\n\nThe answer is 4818.\n\n### Question: What is 63 times 96?\n\n### Response:\n\nThe answer is 6048. \n### Question:\n[INSTRUCTION]\n\n### Response:\n"
+    },
+    "GSM8k": {
+      "superhigh":"\nBelow is an arithmetic reasoning question and answer in the format of 'The answer is' whitout any other introductory phrases. \n### Question:\n[INSTRUCTION]\n \n### Response:\n",
+      "fewshot_superhigh": "\nBelow is an arithmetic reasoning question and answer in the format of 'The answer is' whitout any other introductory phrases. \n### Examples:\n\n### Question:\nGretchen has 110 coins. There are 30 more gold coins than silver coins. How many gold coins does Gretchen have?\n\n### Response:\nThe answer is 70.\n\n### Question:\nA wooden bridge can carry no more than 5000 pounds. A delivery truck filled with identical boxes, each weighing 15 pounds, will pass over the bridge. The combined weight of the driver and the empty truck is 3755 pounds. What is the maximum number of boxes which can be loaded onto the truck while not exceeding the bridge's weight limit?\n\n### Response:\nThe answer is 83.\n\n### Question:\n[INSTRUCTION]\n\n### Response:\n"
+    },
+    "commonsenseqa": {
+      "csuperhigh":"\nBelow is an instruction that describes a task, paired with an input that provides further context. Choose a correct answer that appears in the candidate answers. Answer in the format of 'The answer is' whitout any other introductory phrases. \n### Question: [INSTRUCTION]\n[OPTIONS]\n \n### Among (a) through [LASTOPTIONS], the answer is",
+      "fewshot_csuperhigh": "\nBelow is an instruction that describes a task, paired with an input that provides further context. Choose a correct answer that appears in the candidate answers. Answer in the format of 'The answer is' whitout any other introductory phrases. \n\n### Examples:\n\n### Question: Where is a human likely to go as a result of being hungry? \n\n(a) eat in restaurant\n(b) make bread\n(c) have lunch\n(d) cook dinner\n(e) friends house\n\n### Among (a) through (d), the answer is (a).\n\n### Question: James is carrying a duffel bag with him because he doesn't have a vehicle of his own and needs a bag to carry his things in while he uses what?\n(a) library\n(b) transit\n(c) bus station\n(d) army barracks\n(e) locker room\n\n### Among (a) through (e), the answer is (b).\n\n### Question: [INSTRUCTION]\n[OPTIONS]\n\n### Among (a) through [LASTOPTIONS], the answer is"
+    },
+    "analytic_entailment": {
+      "csuperhigh":"\nYou will be provided with two sentences and determine if there is an entailment relationship between sentence 1 and sentence 2. An entailment relationship exists when the truth of sentence 1 guarantees the truth of sentence 2. Choose a correct answer that appears in the candidate answers. Do not output any introductory phrases.\n  \n### Sentences:\n[INSTRUCTION]\n \n### Options:\n[OPTIONS]\n \n### Relation (entailment or no-entailment, do not output any introductory phrases):\n",
+      "fewshot_superhigh":"\nYou will be provided with two sentences and determine if there is an entailment relationship between sentence 1 and sentence 2. An entailment relationship exists when the truth of sentence 1 guarantees the truth of sentence 2.\n  \n### Examples:\nsentence 1: The meeting starts in less than an hour.\nsentence 2: So the meeting starts in less than ten minutes.\n### Relation (entailment or no-entailment):\nno-entailment.\n \nsentence 1: Sally met two actresses. \nsentence 2: So Sally met at least one woman.\n### Relation (entailment or no-entailment):\nentailment.\n \n### Sentences:\n[INSTRUCTION]\n \n### Relation (entailment or no-entailment, do not output any introductory phrases):\n",
+      "superhigh":"\nYou will be provided with two sentences and determine if there is an entailment relationship between sentence 1 and sentence 2. An entailment relationship exists when the truth of sentence 1 guarantees the truth of sentence 2.\n  \n### Sentences:\n[INSTRUCTION]\n \n### Relation (entailment or no-entailment, do not output any introductory phrases):\n",
+      "no":""
+    },
+    "word_unscrambling": {
+      "superhigh":"\nYou will be provided with scrambled letters and identify the correct English word that they can form. Answer in the format 'The unscrambled word is' without any other introductory phrases.\n \n### Input: [INSTRUCTION]\n \n### Output:",
+      "fewshot_superhigh": "\nYou will be provided with scrambled letters and identify the correct English word that they can form. Answer in the format 'The unscrambled word is' without any other introductory phrases. \n### Examples:\n\n### Input: The word ahtt is a scrambled version of the English word\n\n### Output: The unscrambled word is that.\n\n### Input: The word uor is a scrambled version of the English word\n\n### Output: The unscrambled word is our.\n\n### Input: [INSTRUCTION]\n\n### Output:"
+    },
+    "civilcomments":{
+      "superhigh":"\nYou are an expert in identifying harmful content in text. Below is a passage for you to evaluate. Please determine whether the text contains harmful information and respond with either 'The text is toxic' or 'The text is no-toxic.' Do not output any introductory phrases. \n \n### Input: [INSTRUCTION]\n \n### Response:",
+      "no":""
+    },
+    "civilcomments_interv_maj":{
+      "superhigh":"\nYou are an expert in identifying harmful content in text. Below is a passage for you to evaluate. Please determine whether the text contains harmful information and respond with either 'The text is toxic' or 'The text is no-toxic.' Do not output any introductory phrases. \n \n### Input: [INSTRUCTION]\n \n### Response:",
+      "no":""
+    },
+    "civilcomments_interv_min":{
+      "superhigh":"\nYou are an expert in identifying harmful content in text. Below is a passage for you to evaluate. Please determine whether the text contains harmful information and respond with either 'The text is toxic' or 'The text is no-toxic.' Do not output any introductory phrases. \n \n### Input: [INSTRUCTION]\n \n### Response:",
+      "no":""
+    },
+    "civilcomments_min":{
+      "superhigh":"\nYou are an expert in identifying harmful content in text. Below is a passage for you to evaluate. Please determine whether the text contains harmful information and respond with either 'The text is toxic' or 'The text is no-toxic.' Do not output any introductory phrases. \n \n### Input: [INSTRUCTION]\n \n### Response:",
+      "no":""
+    },
+    "civilcomments_maj":{
+      "superhigh":"\nYou are an expert in identifying harmful content in text. Below is a passage for you to evaluate. Please determine whether the text contains harmful information and respond with either 'The text is toxic' or 'The text is no-toxic.' Do not output any introductory phrases. \n \n### Input: [INSTRUCTION]\n \n### Response:",
+      "no":""
+    }
+  }
+}
