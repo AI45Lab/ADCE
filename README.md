@@ -1,4 +1,4 @@
-# DiD-based-Causal-Mediation-Framework
+# Causal-Mediation-Analysis-Framework
 Core for the Paper: Just Surface Structures Learners? A Causal Reassessment of LLMs' Comprehension Abilities
 
 
