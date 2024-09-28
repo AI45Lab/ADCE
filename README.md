@@ -29,10 +29,10 @@ python finetune_entail.py
 ```
 
 
-# NDE Calculation
+# DCE Calculation
 To test closed-source models, run commands below:
 ``` bash
-cd nde_calculation
+cd dce_calculation
 
 # civil comments
 bash agent_main.sh --dataset_name 2_digit_multiplication --prompt superhigh  --interv_type mask --num_mask 2 --mask_fix_position 0 
@@ -55,7 +55,7 @@ bash agent_main.sh --dataset_name  commonsenseqa --prompt csuperhigh --interv_ty
 
 To test open-source models, run commands below:
 ``` bash
-cd nde_calculation
+cd dce_calculation
 
 # civil comments
 bash white_main.sh --dataset_name 2_digit_multiplication --prompt superhigh  --interv_type mask --num_mask 2 --mask_fix_position 0 
