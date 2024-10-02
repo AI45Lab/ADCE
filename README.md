@@ -1,5 +1,5 @@
 # Causal-Mediation-Analysis-Framework
-Core for the Paper: Just Surface Structures Learners? A Causal Reassessment of LLMs' Comprehension Abilities
+Core for the Paper: Beyond Surface Structure: A Causal Assessment of LLMs' Comprehension Ability
 
 
 ## Environment
@@ -29,7 +29,7 @@ python finetune_entail.py
 ```
 
 
-# DCE Calculation
+# ADCE & AICE Calculation
 To test closed-source models, run commands below:
 ``` bash
 cd dce_calculation
