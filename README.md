@@ -1,5 +1,5 @@
-# Causal-Mediation-Analysis-Framework for ADCE and AICE
-Code for the Paper: Beyond Surface Structure: A Causal Assessment of LLMs' Comprehension Ability
+#  ADCE and AICE
+The official code for paper: Beyond Surface Structure: A Causal Assessment of LLMs' Comprehension Ability.
 
 
 ## Environment
