@@ -1,6 +1,10 @@
 #  ADCE and AICE
 The official code for paper: Beyond Surface Structure: A Causal Assessment of LLMs' Comprehension Ability.
 
+## Pipeline
+
+   ![Pipeline](https://github.com/OpenCausaLab/ADCE/blob/main/img/pipeline.png)
+
 
 ## Environment
 
