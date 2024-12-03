@@ -85,3 +85,17 @@ bash white_main.sh --dataset_name commonsenseqa --prompt csuperhigh --interv_typ
 cd intervention_rephrase
 python generate_intervention_commonsenseqa.py
 ```
+
+# Citation
+Please cite our paper if this repository inspires your work.
+```
+@misc{han2024surfacestructurecausalassessment,
+      title={Beyond Surface Structure: A Causal Assessment of LLMs' Comprehension Ability}, 
+      author={Yujin Han and Lei Xu and Sirui Chen and Difan Zou and Chaochao Lu},
+      year={2024},
+      eprint={2411.19456},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2411.19456}, 
+}
+```
