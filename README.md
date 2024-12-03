@@ -88,7 +88,7 @@ python generate_intervention_commonsenseqa.py
 
 # Citation
 Please cite our paper if this repository inspires your work.
-```
+
 @misc{han2024surfacestructurecausalassessment,
       title={Beyond Surface Structure: A Causal Assessment of LLMs' Comprehension Ability}, 
       author={Yujin Han and Lei Xu and Sirui Chen and Difan Zou and Chaochao Lu},
@@ -98,4 +98,4 @@ Please cite our paper if this repository inspires your work.
       primaryClass={cs.CL},
       url={https://arxiv.org/abs/2411.19456}, 
 }
-```
+
