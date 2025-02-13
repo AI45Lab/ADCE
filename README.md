@@ -1,5 +1,5 @@
 #  ADCE and AICE
-The official code for paper: Beyond Surface Structure: A Causal Assessment of LLMs' Comprehension Ability.(ICLR'25)
+The official code for paper: Beyond Surface Structure: A Causal Assessment of LLMs' Comprehension Ability (ICLR'25).
 
 ## Pipeline
 
